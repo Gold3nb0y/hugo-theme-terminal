@@ -13,6 +13,28 @@
 
   {{ partial "header.html" . }}
 
+
+  {{ if .Params.labels }}
+  <!-- sidebar start -->
+  <aside class="my-nav">
+      <div id="sidebar" class="nav-collapse my-nav-inner">
+          <h1> Page contents </h1>        
+          <!-- sidebar menu start-->
+          <ul class="sidebar-menu">
+              {{ range .Params.labels }}
+              <li>
+                  <a href="#{{- . -}}">
+                      {{- . -}} 
+                      </a>&nbsp;
+              </li>
+              {{ end }}
+          </ul>
+          <!-- sidebar menu end-->
+      </div>
+  </aside>
+  <!--sidebar end-->
+  {{ end }}
+
   <div class="content">
     {{ block "main" . }}
     {{ end }}

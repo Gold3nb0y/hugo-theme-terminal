@@ -29,6 +29,21 @@ body {
   }
 }
 
+.my-nav{
+    position: fixed;
+    width: 20%;
+    background-color: #22283b;
+    display: block;
+    right: 5%;
+    border-radius: 5px;
+    color: $accent;
+}
+
+.my-nav-inner{
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
 .headings--one-size {
   h1,
   h2,
@@ -298,14 +313,14 @@ mark {
   display: flex;
   flex-direction: column;
   padding: 40px;
-  max-width: 864px;
+  margin-right: auto;
+  max-width: 70%;
   min-height: 100vh;
   border-right: 1px solid rgba(255, 255, 255, 0.1);
 
   &.full,
   &.center {
     border: none;
-    margin: 0 auto;
   }
 
   &.full {
@@ -324,7 +339,6 @@ mark {
 .content {
   display: flex;
   flex-direction: column;
-
   @media print {
     display: initial;
   }
