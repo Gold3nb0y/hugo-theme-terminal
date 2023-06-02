@@ -50,6 +50,19 @@ body {
     padding-bottom: 20px;
 }
 
+.side-bar{
+    position: fixed;
+    top: 5%;
+    right: 5%;
+    display: block;
+    height: 90%;
+    width: auto;
+
+    @media ($phone){
+        display: none;
+    }
+}
+
 .headings--one-size {
   h1,
   h2,
