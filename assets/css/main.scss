@@ -37,6 +37,12 @@ body {
     right: 5%;
     border-radius: 5px;
     color: $accent;
+    max-height: 90%;
+
+
+    @media ($phone) {
+        display: none;
+    }
 }
 
 .my-nav-inner{
@@ -329,6 +335,8 @@ mark {
 
   @media ($phone) {
     padding: 20px;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   @media print {
