@@ -26,6 +26,7 @@ body {
 
   @media ($phone) {
     font-size: 1rem;
+    width: 90%;
   }
 }
 
@@ -357,6 +358,7 @@ mark {
     padding: 20px;
     margin-right: auto;
     margin-left: auto;
+    max-width: 100%;
   }
 
   @media print {
